@@ -1,5 +1,11 @@
 def avg(data):
-    print((data["employees"][0]["salary"]+data["employees"][1]["salary"]+data["employees"][2]["salary"])/data["count"])
+    sum = 0
+    ttl = data["count"]
+    staff = data["employees"]
+    for money in staff :
+        sum += money["salary"]
+    result = sum/ttl
+    print(result)
 avg({
     "count":3,
     "employees":[
