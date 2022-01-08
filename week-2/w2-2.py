@@ -10,8 +10,8 @@ avg({
     "count":3,
     "employees":[
             {
-            "name":"John",
-            "salary":30000
+                "name":"John",
+                "salary":30000
             },
             {
                 "name":"Bob",
