@@ -5,9 +5,15 @@
     <title>Javascript</title>
     <script type="text/javascript">
         function avg(data){
-            var result=(data["employees"][0]["salary"]+data["employees"][1]["salary"]+data["employees"][2]["salary"])/data["count"]
-            alert(result);
-                }
+            let ttl = data.count;
+            let staff = data.employees;
+                sum = 0       
+                    for(let m in staff){ 
+                        sum += staff[m].salary;
+                    }
+        result = sum/ttl;
+        alert(result);  
+        }
         avg({
         "count":3,
         "employees":[
